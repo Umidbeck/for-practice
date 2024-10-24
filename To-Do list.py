@@ -28,7 +28,7 @@ class ToDoList:
                 
     def mark_task_completed(self, index):
         if 0 <= index < len(self.tasks):
-            self.tasks[index].mark_complete()
+            self.tasks[index-1].mark_complete()
         else:
             print("Vazifa topilmadi")
             
