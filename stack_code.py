@@ -26,4 +26,16 @@ obj.push('11')
 obj.push('77')
 
 
-print(obj.peek())
+#print(obj.peek())
+
+
+
+
+def odd_numbers(limit):
+    num = 1
+    while num <= limit:
+        yield num
+        num += 2
+
+for number in odd_numbers(10):
+    print(number)
